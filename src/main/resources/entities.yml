@@ -1,5 +1,4 @@
 entities:
-  - AXOLOTL
   - BAT
   - BEE
   - BLAZE
@@ -46,7 +45,6 @@ entities:
   - PRIMED_TNT
   - PUFFERFISH
   - RABBIT
-  - PAVAGER
   - SALMON
   - SHEEP
   - SHULKER
