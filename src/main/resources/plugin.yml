@@ -1,0 +1,4 @@
+name: RandomSpawnMobs
+version: ${project.version}
+main: com.github.areaeffectcloud.randomspawnmobs.Main
+api-version: 1.16
