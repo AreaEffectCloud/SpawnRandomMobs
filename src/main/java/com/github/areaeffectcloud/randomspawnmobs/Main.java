@@ -17,17 +17,14 @@ public final class Main extends JavaPlugin {
 
         mainclass = this;
         plugin = this;
-
         saveResource("entities.yml", false);
         File entitiesYml = new File(plugin.getDataFolder() + File.separator + "entities.yml");
         FileConfiguration entitiesConfig = YamlConfiguration.loadConfiguration(entitiesYml);
-
         try {
             entitiesConfig.save(entitiesYml);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     @Override

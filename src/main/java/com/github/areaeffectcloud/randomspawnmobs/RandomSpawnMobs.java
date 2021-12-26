@@ -17,16 +17,13 @@ public class RandomSpawnMobs implements Listener {
 
     @EventHandler
     public void RandomBlock(BlockBreakEvent e) {
-
         File entitiesYml = new File(Main.plugin.getDataFolder() + File.separator + "entities.yml");
         FileConfiguration entitiesConfig = YamlConfiguration.loadConfiguration(entitiesYml);
         List<String> list = entitiesConfig.getStringList("entities");
-
         Player player = e.getPlayer();
         Block block = e.getBlock();
         Random random = new Random();
         String toSpawn = list.get(random.nextInt(list.size()));
-
         player.getWorld().spawnEntity(block.getLocation(), EntityType.valueOf(toSpawn));
     }
 }
